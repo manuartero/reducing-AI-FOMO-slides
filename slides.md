@@ -186,10 +186,9 @@ layout: two-col
         <MisticaIcon name="settings" :size="20" color="var(--mistica-color-brand)" />
         <span style="font-size: 0.9rem; font-weight: 600;">Codex</span>
       </div>
-      <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1rem; border-radius: var(--mistica-border-radius-container); border: 1px solid var(--mistica-color-borderSelected); background: var(--mistica-color-backgroundContainer);">
-        <MisticaIcon name="rocket" :size="20" color="var(--mistica-color-success)" />
+      <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
+        <MisticaIcon name="rocket" :size="20" color="var(--mistica-color-brand)" />
         <span style="font-size: 0.9rem; font-weight: 600;">OpenCode</span>
-        <span style="font-size: 0.65rem; background: var(--mistica-color-success); color: white; padding: 1px 6px; border-radius: var(--mistica-border-radius-tag); font-weight: 600;">OSS</span>
       </div>
     </div>
   </div>
@@ -199,23 +198,26 @@ layout: two-col
 </div>
 
 ---
-layout: two-col
----
 
 # Does pairing client + model matter?
 
-<div style="margin-top: 1rem;">
-
-**Camp A:** The specific client+model pair creates a different experience — they're tuned together.
-
-**Camp B (my view):** The UX differs. The output quality? Not significantly.
-
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1.5rem;">
+  <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem;">
+    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+      <span style="font-weight: 600; font-size: 0.9rem;">Opinion A</span>
+    </div>
+    <p style="margin: 0; font-size: 0.85rem; line-height: 1.6; color: var(--mistica-color-textSecondary);">The specific client+model pair creates a different experience; they're <strong>tuned together</strong>.</p>
+  </div>
+  <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem;">
+    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+      <span style="font-weight: 600; font-size: 0.9rem;">Opinion B</span>
+    </div>
+    <p style="margin: 0; font-size: 0.85rem; line-height: 1.6; color: var(--mistica-color-textSecondary);">The UX (devExperience) differs. The output quality, <strong>Not significantly</strong>.</p>
+  </div>
 </div>
 
-::right::
-
-<div style="display: flex; flex-direction: column; justify-content: center; height: 100%; padding: 1rem;">
-  <div style="border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; background: var(--mistica-color-backgroundContainer);">
+<div style="display: flex; justify-content: center; margin-top: 1.5rem;">
+  <div style="border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; background: var(--mistica-color-backgroundContainer); width: 70%;">
     <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
       <MisticaIcon name="star" :size="20" color="var(--mistica-color-brand)" />
       <span style="font-weight: 600; font-size: 0.9rem; color: var(--mistica-color-textBrand);">My recommendation</span>
@@ -229,11 +231,11 @@ layout: two-col
 layout: brand
 ---
 
-# Level 2 is about *how* you interact
+# Level 2: *how* you interact
 
 The client is just a window. The model is the engine.
 
-**Your prompts, context, and structure** are the steering wheel.
+**Your prompts, context, and structure** is what actually matter
 
 ---
 layout: brand
@@ -245,24 +247,33 @@ section: 3
 Let's name them so they stop sounding scary
 
 ---
+layout: default
+---
 
-# Agents, Skills, and MCPs
+# The buzzwords
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem;">
-  <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
-    <MisticaIcon name="settings" :size="32" color="var(--mistica-color-brand)" />
-    <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Agents</h3>
-    <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">AI operating in multi-step, autonomous loops</p>
-  </div>
-  <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
-    <MisticaIcon name="lightning" :size="32" color="var(--mistica-color-warning)" />
-    <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Skills</h3>
-    <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Reusable, scoped instructions you give the agent</p>
-  </div>
-  <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
-    <MisticaIcon name="link" :size="32" color="var(--mistica-color-success)" />
-    <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">MCPs</h3>
-    <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Model Context Protocol; structured tools the model can call</p>
+<div style="display: flex; align-items: center; justify-content: center; flex: 1; margin-top: 1rem;">
+  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; width: 100%;">
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+      <MisticaIcon name="settings" :size="32" color="var(--mistica-color-brand)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Agents</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">AI operating in multi-step, autonomous loops</p>
+    </div>
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+      <MisticaIcon name="lightning" :size="32" color="var(--mistica-color-warning)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Skills</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Reusable, scoped instructions you give the agent</p>
+    </div>
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+      <MisticaIcon name="link" :size="32" color="var(--mistica-color-success)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">MCPs</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Model Context Protocol; structured tools the model can call</p>
+    </div>
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+      <MisticaIcon name="search" :size="32" color="var(--mistica-color-error)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">RAG</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Retrieval-Augmented Generation; feeding external data to the model</p>
+    </div>
   </div>
 </div>
 
@@ -270,18 +281,20 @@ Let's name them so they stop sounding scary
 layout: two-col
 ---
 
-# Agents: what you're already using
+# Agents: you're already using one
 
-In tools like Claude Code, you're already running **two agents**:
+An agent = AI that acts **autonomously in a loop**. Claude Code is one agent with two modes:
 
 <div style="margin-top: 1.5rem;">
 
 | Mode | What it does |
 |---|---|
-| **Plan mode** | Thinks, reasons, proposes steps |
-| **Implement mode** | Executes, writes, runs commands |
+| **Plan** | Thinks, reasons, proposes steps |
+| **Act** | Executes, writes, runs commands |
 
 </div>
+
+The modes control how much **autonomy** you give it.
 
 ::right::
 
@@ -299,11 +312,11 @@ In tools like Claude Code, you're already running **two agents**:
   <div style="display: flex; align-items: center; gap: 0.75rem; padding: 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
     <MisticaIcon name="rocket" :size="28" color="var(--mistica-color-success)" />
     <div>
-      <div style="font-weight: 600; font-size: 0.9rem;">Implement</div>
+      <div style="font-weight: 600; font-size: 0.9rem;">Act</div>
       <div style="font-size: 0.75rem; color: var(--mistica-color-textSecondary);">Execute the plan</div>
     </div>
   </div>
-  <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary); text-align: center;">You've been using agents. You just didn't call them that.</p>
+  <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary); text-align: center;">You've been using an agent. You just didn't call it that.</p>
 </div>
 
 ---
