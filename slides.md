@@ -254,22 +254,115 @@ layout: default
 
 <div style="display: flex; align-items: center; justify-content: center; flex: 1; margin-top: 1rem;">
   <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; width: 100%;">
-    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+    <div style="border: 2px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
       <MisticaIcon name="settings" :size="32" color="var(--mistica-color-brand)" />
       <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Agents</h3>
       <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">AI operating in multi-step, autonomous loops</p>
     </div>
-    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
       <MisticaIcon name="lightning" :size="32" color="var(--mistica-color-warning)" />
       <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Skills</h3>
       <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Reusable, scoped instructions you give the agent</p>
     </div>
-    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
       <MisticaIcon name="link" :size="32" color="var(--mistica-color-success)" />
       <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">MCPs</h3>
       <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Model Context Protocol; structured tools the model can call</p>
     </div>
-    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="search" :size="32" color="var(--mistica-color-error)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">RAG</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Retrieval-Augmented Generation; feeding external data to the model</p>
+    </div>
+  </div>
+</div>
+
+---
+layout: default
+---
+
+# The buzzwords
+
+<div style="display: flex; align-items: center; justify-content: center; flex: 1; margin-top: 1rem;">
+  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; width: 100%;">
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="settings" :size="32" color="var(--mistica-color-brand)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Agents</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">AI operating in multi-step, autonomous loops</p>
+    </div>
+    <div style="border: 2px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+      <MisticaIcon name="lightning" :size="32" color="var(--mistica-color-warning)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Skills</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Reusable, scoped instructions you give the agent</p>
+    </div>
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="link" :size="32" color="var(--mistica-color-success)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">MCPs</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Model Context Protocol; structured tools the model can call</p>
+    </div>
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="search" :size="32" color="var(--mistica-color-error)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">RAG</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Retrieval-Augmented Generation; feeding external data to the model</p>
+    </div>
+  </div>
+</div>
+
+---
+layout: default
+---
+
+# The buzzwords
+
+<div style="display: flex; align-items: center; justify-content: center; flex: 1; margin-top: 1rem;">
+  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; width: 100%;">
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="settings" :size="32" color="var(--mistica-color-brand)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Agents</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">AI operating in multi-step, autonomous loops</p>
+    </div>
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="lightning" :size="32" color="var(--mistica-color-warning)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Skills</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Reusable, scoped instructions you give the agent</p>
+    </div>
+    <div style="border: 2px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
+      <MisticaIcon name="link" :size="32" color="var(--mistica-color-success)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">MCPs</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Model Context Protocol; structured tools the model can call</p>
+    </div>
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="search" :size="32" color="var(--mistica-color-error)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">RAG</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Retrieval-Augmented Generation; feeding external data to the model</p>
+    </div>
+  </div>
+</div>
+
+---
+layout: default
+---
+
+# The buzzwords
+
+<div style="display: flex; align-items: center; justify-content: center; flex: 1; margin-top: 1rem;">
+  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; width: 100%;">
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="settings" :size="32" color="var(--mistica-color-brand)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Agents</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">AI operating in multi-step, autonomous loops</p>
+    </div>
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="lightning" :size="32" color="var(--mistica-color-warning)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Skills</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Reusable, scoped instructions you give the agent</p>
+    </div>
+    <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center; opacity: 0.3;">
+      <MisticaIcon name="link" :size="32" color="var(--mistica-color-success)" />
+      <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">MCPs</h3>
+      <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Model Context Protocol; structured tools the model can call</p>
+    </div>
+    <div style="border: 2px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
       <MisticaIcon name="search" :size="32" color="var(--mistica-color-error)" />
       <h3 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">RAG</h3>
       <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary);">Retrieval-Augmented Generation; feeding external data to the model</p>
