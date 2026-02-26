@@ -604,6 +604,18 @@ The model doesn't browse GitHub. It calls a **structured tool** that does.
 </div>
 
 ---
+layout: default
+---
+
+# Using MCP Servers
+
+<div style="display: flex; gap: 1rem; align-items: flex-start; justify-content: center; flex: 1; margin-top:4em;">
+  <img src="/screenshots/mcp-1.png" style="flex: 1; border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); min-width: 0;" />
+  <img src="/screenshots/mcp-2.png" style="flex: 1; border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); min-width: 0;" />
+  <img src="/screenshots/mcp-3.png" style="flex: 1; border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); min-width: 0;" />
+</div>
+
+---
 layout: brand
 section: 4
 ---
@@ -618,28 +630,32 @@ How to create, use, and share them
 
 *Example: `/telefonica-slides`*
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem;">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem; 0 1.5rem 0;">
   <div style="display: flex; align-items: center; gap: 0.5rem;">
-    <MisticaIcon name="presentation" :size="24" color="var(--mistica-color-brand)" />
+    <MisticaIcon name="presentation" :size="48" color="var(--mistica-color-brand)" />
     <span style="font-size: 0.85rem;">Bootstraps a Slidev presentation with Telefonica branding</span>
   </div>
   <div style="display: flex; align-items: center; gap: 0.5rem;">
-    <MisticaIcon name="copy" :size="24" color="var(--mistica-color-success)" />
+    <MisticaIcon name="copy" :size="48" color="var(--mistica-color-success)" />
     <span style="font-size: 0.85rem;">Accepts a file, URL, or inline text as input</span>
   </div>
   <div style="display: flex; align-items: center; gap: 0.5rem;">
-    <MisticaIcon name="settings" :size="24" color="var(--mistica-color-warning)" />
+    <MisticaIcon name="settings" :size="48" color="var(--mistica-color-warning)" />
     <span style="font-size: 0.85rem;">Generates properly structured slides automatically</span>
   </div>
 </div>
 
-```
+Examples:
+
+```bash
 /telefonica-slides ./docs/api.md
+/telefonica-slides summarize the contents from ...
 /telefonica-slides export pdf
+/telefonica-slides create a pdf
 ```
 
-<div style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--mistica-color-textSecondary);">
-One skill. Reusable. Consistent. No reinventing.
+<div style="margin-top: 1rem; font-size: 1rem; color: var(--mistica-color-textSecondary);">
+One skill. Reusable steps, workflow and prompt.
 </div>
 
 ---
@@ -688,9 +704,39 @@ layout: two-col
   </div>
   <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.75rem;">
     <MisticaIcon name="information" :size="18" color="var(--mistica-color-brand)" />
-    <span style="font-size: 0.8rem; color: var(--mistica-color-textSecondary);">The <strong>description</strong> is critical — it's how the agent decides <em>when</em> to use it.</span>
+    <span style="font-size: 0.8rem; color: var(--mistica-color-textSecondary);">The <strong>description</strong> is critical: how the agent decides <em>when</em> to use it.</span>
   </div>
 </div>
+
+---
+layout: default
+---
+
+# `/telefonica-slides`
+
+```md{1-6|10-11|13-14|16-17|19-20|all}
+---
+name: telefonica-slides
+description: Creates branded presentations using ...
+metadata:
+  tags: []...
+---
+
+## When to use this skill
+
+## Inputs
+...
+
+## Procedure
+...
+
+## Output format
+...
+
+## Examples
+...
+```
+
 
 ---
 layout: two-col
@@ -782,36 +828,20 @@ layout: brand
 
 # Nothing is set in stone
 
-- This space is 6-18 months old in practice
-- Best practices are being written in real time
-- Everyone is experimenting, including the people at Level 12
+<div style="color: white;">
+ <ul>
+  <li style="color: white;">This space is 2 months old in practice</li>
+  <li style="color: white;">Best practices are being written in real time</li>
+  <li style="color: white;">Everyone is experimenting, including the people at Level</li>
+  </ul>
+</div>
 
-**That's not a warning. That's an invitation.**
 
 ---
-
-# You made it
-
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.5rem;">
-  <div style="display: flex; align-items: center; gap: 0.75rem; padding: 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
-    <MisticaIcon name="eye" :size="24" color="var(--mistica-color-brand)" />
-    <span style="font-size: 0.85rem;">You know what FOMO is and why it's <strong>manufactured</strong></span>
-  </div>
-  <div style="display: flex; align-items: center; gap: 0.75rem; padding: 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
-    <MisticaIcon name="refresh" :size="24" color="var(--mistica-color-success)" />
-    <span style="font-size: 0.85rem;">You know the difference between <strong>clients and models</strong></span>
-  </div>
-  <div style="display: flex; align-items: center; gap: 0.75rem; padding: 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
-    <MisticaIcon name="lightning" :size="24" color="var(--mistica-color-warning)" />
-    <span style="font-size: 0.85rem;">You know what <strong>agents, skills, and MCPs</strong> actually are</span>
-  </div>
-  <div style="display: flex; align-items: center; gap: 0.75rem; padding: 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
-    <MisticaIcon name="rocket" :size="24" color="var(--mistica-color-error)" />
-    <span style="font-size: 0.85rem;">You know <strong>where to start</strong></span>
-  </div>
-</div>
+layout: final
+---
 
 <div style="text-align: center; margin-top: 2rem;">
   <MisticaIcon name="trophy" :size="40" color="var(--mistica-color-warning)" />
-  <p style="font-size: 1.5rem; font-weight: 700; color: var(--mistica-color-textBrand); margin: 0.5rem 0 0;">Level 2. Welcome.</p>
+  <p style="font-size: 1.5rem; font-weight: 700; color: var(--mistica-color-textBrand); margin: 0.5rem 0 0;">Thanks</p>
 </div>
