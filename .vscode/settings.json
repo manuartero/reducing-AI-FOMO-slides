@@ -1,0 +1,7 @@
+{
+  "[markdown]": {
+    "editor.defaultFormatter": "antfu.slidev",
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  }
+}

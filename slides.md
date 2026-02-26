@@ -9,53 +9,58 @@ layout: cover
 
 # Reducing AI FOMO
 
-## VIDEO - CafeterIA
+## VIDEO Team - CafeterIA
 
-
+<div style="position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); font-size: 0.8rem; color: var(--mistica-color-textSecondary);">
+27 February 2026
+</div>
 
 ---
 layout: brand
+section: 1
 ---
 
-# What you're feeling has a name
+# Fear Of Missing Out
 
-## AI Fear Of Missing Out
+## What you're feeling has a name
 
-> "Every day a new model. Every week a new tool. Everyone seems to know more than you."
-
-That feeling is real. And it's not an accident.
 
 ---
-layout: two-col
+layout: default
 ---
 
 # There is big money making you feel this way
 
+> Every day a new model. Every week a new tool. Everyone seems to know more than you.
+
+
 <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem;">
   <div style="display: flex; align-items: center; gap: 0.75rem;">
     <MisticaIcon name="bar-chart" :size="28" color="var(--mistica-color-error)" />
-    <span>AI companies compete for <strong>attention</strong></span>
+    <span><strong>$600B+</strong> invested in AI infra this year -> they <em>need</em> you to feel behind</span>
   </div>
   <div style="display: flex; align-items: center; gap: 0.75rem;">
     <MisticaIcon name="trend-up" :size="28" color="var(--mistica-color-warning)" />
-    <span>Hype cycles are a <strong>product strategy</strong></span>
+    <span>Google & Microsoft paying influencers -> <strong>$400–600K</strong> to flood your feed</span>
   </div>
   <div style="display: flex; align-items: center; gap: 0.75rem;">
     <MisticaIcon name="bell" :size="28" color="var(--mistica-color-brand)" />
-    <span>The noise is designed to feel <strong>urgent</strong></span>
+    <span>The noise is designed to feel <strong>urgent</strong> — it's a product strategy</span>
   </div>
 </div>
 
-::right::
-
-<div style="display: flex; align-items: center; justify-content: center; height: 100%; padding: 2rem;">
+<div style="margin-top: 1.5rem; width:70%">
   <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.5rem; background: var(--mistica-color-backgroundAlternative);">
     <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
       <MisticaIcon name="lightbulb" :size="20" color="var(--mistica-color-warning)" />
       <span style="font-weight: 600; font-size: 0.9rem;">Remember</span>
     </div>
-    <p style="margin: 0; font-size: 0.85rem; color: var(--mistica-color-textSecondary); line-height: 1.6;">Being aware of this doesn't make you cynical. It makes you <span style="color: var(--mistica-color-textBrand); font-weight: 600;">clearer</span>.</p>
+    <p style="margin: 0; font-size: 0.85rem; color: var(--mistica-color-textSecondary); line-height: 1.6;">There are <strong>$600 billion reasons</strong> for you to feel this way. Being aware of it makes you <span style="color: var(--mistica-color-textBrand); font-weight: 600;">clearer</span>.</p>
   </div>
+</div>
+
+<div style="position: absolute; bottom: 5.5rem; font-size: 0.85rem; color: var(--mistica-color-textSecondary);">
+  Source: <a href="https://www.estrategiadeproducto.com/p/negocio-crearte-ansiedad-con-la-ia" style="color: var(--mistica-color-textSecondary);">El negocio de crearte ansiedad con la IA</a> — Simón Muñoz
 </div>
 
 ---
@@ -70,20 +75,21 @@ This talk has a simple success metric:
 </div>
 
 <div style="text-align: center; margin-top: 2rem; color: var(--mistica-color-textSecondary); font-size: 0.95rem;">
-No pressure. Just 10 minutes.
+No pressure. Just 15 minutes.
 </div>
 
 ---
 layout: two-col
 ---
 
-# Let's be honest about where we are
+# Where we are
 
-<div style="margin-top: 1.5rem;">
+<div style="margin-top: 2rem;">
 
 - AI has been moving fast. Some people are already **Level 12**.
-- You might be at **Level 1**.
-- Realizing this gap is exactly what spikes the FOMO.
+- This talk targets **Level 1**.
+- Realizing this gap spikes the FOMO.
+- Knowing the field reduces the FOMO.
 
 </div>
 
@@ -94,7 +100,7 @@ layout: two-col
     <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
       <MisticaIcon name="trophy" :size="40" color="var(--mistica-color-warning)" />
     </div>
-    <span style="font-size: 2rem; font-weight: 700; color: var(--mistica-color-textBrand);">Lvl 12</span>
+    <span style="font-size: 2rem; font-weight: 700; color: var(--mistica-color-textBrand);">Lvl 10</span>
     <p style="margin: 0.25rem 0 0; font-size: 0.75rem; color: var(--mistica-color-textSecondary);">Some people</p>
   </div>
   <div style="width: 2px; height: 40px; background: var(--mistica-color-divider);"></div>
@@ -103,7 +109,7 @@ layout: two-col
       <MisticaIcon name="person" :size="40" color="var(--mistica-color-neutralMedium)" />
     </div>
     <span style="font-size: 2rem; font-weight: 700; color: var(--mistica-color-textSecondary);">Lvl 1</span>
-    <p style="margin: 0.25rem 0 0; font-size: 0.75rem; color: var(--mistica-color-textSecondary);">Maybe you</p>
+    <p style="margin: 0.25rem 0 0; font-size: 0.75rem; color: var(--mistica-color-textSecondary);">We</p>
   </div>
 </div>
 
@@ -111,40 +117,84 @@ layout: two-col
 layout: quote
 ---
 
-Get you from **Level 1 → Level 2**
+GOAL: Get you from **Level 1 → Level 2**
 
 ### Concrete. Achievable. Useful.
+
+---
+layout: brand
+section: 2
+---
+
+# Understanding the tools
+
+Models, clients, and how they fit together
 
 ---
 layout: two-col
 ---
 
-# Understand what you're actually using
+# Models and clients are separate things
 
-| Clients | Models |
-|---|---|
-| GitHub Copilot | GPT-4o |
-| Claude Code | Claude Opus/Sonnet |
-| Cursor | Gemini |
-| Windsurf | Mistral |
-| Codex | ... |
+<div style="margin-top: 1rem;">
+  <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+    <MisticaIcon name="presentation" :size="24" color="var(--mistica-color-brand)" />
+    <span><strong>Client</strong> = the interface you see</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+    <MisticaIcon name="lightbulb" :size="24" color="var(--mistica-color-warning)" />
+    <span><strong>Model</strong> = the brain doing the work</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.5rem;">
+    <MisticaIcon name="refresh" :size="20" color="var(--mistica-color-success)" />
+    <span style="font-size: 0.85rem; color: var(--mistica-color-textSecondary);">You can <strong>mix and match</strong>.</span>
+  </div>
+</div>
+
+<img src="/screenshots/lang-models-copilot.png" style="border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); width: 100%; margin-top:1em;" />
 
 ::right::
 
-<div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 1.25rem; padding: 1rem;">
-  <div style="display: flex; align-items: center; gap: 0.75rem;">
-    <MisticaIcon name="presentation" :size="24" color="var(--mistica-color-brand)" />
-    <span style="font-size: 0.9rem;"><strong>Client</strong> = the interface you see</span>
-  </div>
-  <div style="display: flex; align-items: center; gap: 0.75rem;">
-    <MisticaIcon name="lightbulb" :size="24" color="var(--mistica-color-warning)" />
-    <span style="font-size: 0.9rem;"><strong>Model</strong> = the brain doing the work</span>
-  </div>
-  <div style="border-top: 1px solid var(--mistica-color-divider); padding-top: 1rem;">
-    <div style="display: flex; align-items: center; gap: 0.5rem;">
-      <MisticaIcon name="refresh" :size="20" color="var(--mistica-color-success)" />
-      <span style="font-size: 0.85rem; color: var(--mistica-color-textSecondary);">They are <strong>separate things</strong>. You can mix and match.</span>
+<div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 1rem; padding: 0.5rem;">
+  <img src="/screenshots/claude-code-models.png" style="border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); width: 100%;" />
+</div>
+
+---
+
+# The clients
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+  <div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
+        <MisticaIcon name="code" :size="20" color="var(--mistica-color-brand)" />
+        <span style="font-size: 0.9rem; font-weight: 600;">GitHub Copilot</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
+        <MisticaIcon name="lightning" :size="20" color="var(--mistica-color-brand)" />
+        <span style="font-size: 0.9rem; font-weight: 600;">Claude Code</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
+        <MisticaIcon name="edit-pencil" :size="20" color="var(--mistica-color-brand)" />
+        <span style="font-size: 0.9rem; font-weight: 600;">Cursor</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
+        <MisticaIcon name="cloud" :size="20" color="var(--mistica-color-brand)" />
+        <span style="font-size: 0.9rem; font-weight: 600;">Windsurf</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
+        <MisticaIcon name="settings" :size="20" color="var(--mistica-color-brand)" />
+        <span style="font-size: 0.9rem; font-weight: 600;">Codex</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1rem; border-radius: var(--mistica-border-radius-container); border: 1px solid var(--mistica-color-borderSelected); background: var(--mistica-color-backgroundContainer);">
+        <MisticaIcon name="rocket" :size="20" color="var(--mistica-color-success)" />
+        <span style="font-size: 0.9rem; font-weight: 600;">OpenCode</span>
+        <span style="font-size: 0.65rem; background: var(--mistica-color-success); color: white; padding: 1px 6px; border-radius: var(--mistica-border-radius-tag); font-weight: 600;">OSS</span>
+      </div>
     </div>
+  </div>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <img src="/screenshots/opencode.png" style="border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); max-width: 100%; max-height: 320px;" />
   </div>
 </div>
 
@@ -186,10 +236,17 @@ The client is just a window. The model is the engine.
 **Your prompts, context, and structure** are the steering wheel.
 
 ---
+layout: brand
+section: 3
+---
 
-# Before we go deeper: the buzzwords
+# The buzzwords
 
-Let's name them so they stop sounding scary:
+Let's name them so they stop sounding scary
+
+---
+
+# Agents, Skills, and MCPs
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem;">
   <div style="border: 1px solid var(--mistica-color-border); border-radius: var(--mistica-border-radius-container); padding: 1.25rem; text-align: center;">
@@ -339,7 +396,17 @@ The model doesn't browse GitHub. It calls a **structured tool** that does.
     <MisticaIcon name="search" :size="20" color="var(--mistica-color-warning)" />
     <span style="font-size: 0.85rem;">Search repos</span>
   </div>
+  <img src="/screenshots/mcp-server.png" style="border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); width: 100%; margin-top: 0.5rem;" />
 </div>
+
+---
+layout: brand
+section: 4
+---
+
+# Skills in practice
+
+How to create, use, and share them
 
 ---
 
@@ -466,6 +533,15 @@ layout: two-col
 </div>
 
 ---
+layout: brand
+section: 5
+---
+
+# What's happening around us
+
+Teams are already building on this
+
+---
 layout: two-col
 ---
 
@@ -478,29 +554,22 @@ layout: two-col
 - Agents and MCP sharing point (shared repo)
 - Building reusable Skills across teams
 
+**Video team:**
+
+- Same approach, scoped to video workflows
+- Specific MCPs and Skills for their context
+
+</div>
+
+<div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">
+  <MisticaIcon name="team" :size="20" color="var(--mistica-color-success)" />
+  <span style="font-size: 0.8rem; color: var(--mistica-color-textSecondary);">We're figuring it out <strong>together</strong>.</span>
 </div>
 
 ::right::
 
-<div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 1.25rem; padding: 1rem;">
-  <div style="display: flex; align-items: center; gap: 0.75rem; padding: 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
-    <MisticaIcon name="earth" :size="24" color="var(--mistica-color-brand)" />
-    <div>
-      <div style="font-weight: 600; font-size: 0.85rem;">CDO</div>
-      <div style="font-size: 0.75rem; color: var(--mistica-color-textSecondary);">Shared agents & MCPs repo</div>
-    </div>
-  </div>
-  <div style="display: flex; align-items: center; gap: 0.75rem; padding: 1rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
-    <MisticaIcon name="play-circle" :size="24" color="var(--mistica-color-warning)" />
-    <div>
-      <div style="font-weight: 600; font-size: 0.85rem;">Video team</div>
-      <div style="font-size: 0.75rem; color: var(--mistica-color-textSecondary);">Scoped MCPs & Skills for video workflows</div>
-    </div>
-  </div>
-  <div style="display: flex; align-items: center; gap: 0.5rem; padding-top: 0.5rem;">
-    <MisticaIcon name="team" :size="20" color="var(--mistica-color-success)" />
-    <span style="font-size: 0.8rem; color: var(--mistica-color-textSecondary);">We're figuring it out <strong>together</strong>.</span>
-  </div>
+<div style="display: flex; flex-direction: column; justify-content: center; height: 100%; padding: 0.5rem;">
+  <img src="/screenshots/video-agents.png" style="border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); width: 100%;" />
 </div>
 
 ---
