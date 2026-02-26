@@ -1,6 +1,10 @@
 {
   "name": "reducing-ai-fomo-slides",
   "private": true,
+  "author": {
+    "name": "Manuel Artero",
+    "email": "manutero.developer@gmail.com"
+  },
   "scripts": {
     "dev": "slidev --open",
     "build": "slidev build",
@@ -10,5 +14,8 @@
     "@slidev/cli": "0.50.0",
     "@slidev/theme-default": "0.25.0",
     "slidev-theme-mistica": "0.2.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "1.58.2"
   }
 }
