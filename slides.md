@@ -376,18 +376,28 @@ layout: two-col
 
 # Agents: you're already using one
 
-An agent = AI that acts **autonomously in a loop**. Claude Code is one agent with two modes:
+An agent = AI that takes actions in a loop, using tool calls and observations to make progress toward a goal
 
-<div style="margin-top: 1.5rem;">
+Claude Code has two <span>modes</span>:
 
-| Mode | What it does |
-|---|---|
-| **Plan** | Thinks, reasons, proposes steps |
-| **Act** | Executes, writes, runs commands |
-
+<div style="margin-top: 1.5rem; border-radius: var(--mistica-border-radius-container); overflow: hidden; border: 1px solid var(--mistica-color-border);">
+  <div style="display: grid; grid-template-columns: 7rem 1fr; background: rgba(0, 100, 210, 0.1); font-weight: 600; font-size: 0.85rem;">
+    <div style="padding: 0.6rem 1rem;">Mode</div>
+    <div style="padding: 0.6rem 1rem;">What it does</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 7rem 1fr; font-size: 0.85rem;">
+    <div style="padding: 0.6rem 1rem; font-weight: 600;">Plan</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Thinks, reasons, proposes steps</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 7rem 1fr; font-size: 0.85rem; background: rgba(0, 100, 210, 0.05);">
+    <div style="padding: 0.6rem 1rem; font-weight: 600;">Act</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Executes, writes, runs commands</div>
+  </div>
 </div>
 
-The modes control how much **autonomy** you give it.
+<div style="margin-top: 2em;">
+The modes control how much <span>autonomy</span> you give it.
+</div>
 
 ::right::
 
@@ -443,6 +453,88 @@ The model reads it **automatically** at the start of every session.
 </div>
 
 ---
+layout: default
+---
+
+# Same idea, different names
+
+Each client has its own version of the "project instructions" file:
+
+<div style="margin-top: 1.5rem; border-radius: var(--mistica-border-radius-container); overflow: hidden; border: 1px solid var(--mistica-color-border);">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; background: rgba(0, 100, 210, 0.1); font-weight: 600; font-size: 0.85rem;">
+    <div style="padding: 0.6rem 1rem;">File</div>
+    <div style="padding: 0.6rem 1rem;">Client</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem;">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">CLAUDE.md</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Claude Code</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem; background: rgba(0, 100, 210, 0.05);">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">.cursorrules</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Cursor</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem;">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">.windsurfrules</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Windsurf</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem; background: rgba(0, 100, 210, 0.05);">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">.github/copilot-instructions.md</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">GitHub Copilot</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem;">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">.clinerules</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Cline</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem; background: rgba(0, 100, 210, 0.05);">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">AGENTS.md</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Codex / generic</div>
+  </div>
+</div>
+
+<p style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--mistica-color-textSecondary);">Different filename, <strong>same concept</strong>: persistent context the model reads at the start of every session.</p>
+
+---
+layout: default
+---
+
+# Same idea, different names
+
+Each client has its own version of the "project instructions" file:
+
+<div style="margin-top: 1.5rem; border-radius: var(--mistica-border-radius-container); overflow: hidden; border: 1px solid var(--mistica-color-border);">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; background: rgba(0, 100, 210, 0.1); font-weight: 600; font-size: 0.85rem;">
+    <div style="padding: 0.6rem 1rem;">File</div>
+    <div style="padding: 0.6rem 1rem;">Client</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem; opacity: 0.3;">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">CLAUDE.md</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Claude Code</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem; background: rgba(0, 100, 210, 0.05); opacity: 0.3;">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">.cursorrules</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Cursor</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem; opacity: 0.3;">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">.windsurfrules</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Windsurf</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem; background: rgba(0, 100, 210, 0.05); opacity: 0.3;">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">.github/copilot-instructions.md</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">GitHub Copilot</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem; opacity: 0.3;">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">.clinerules</div>
+    <div style="padding: 0.6rem 1rem; color: var(--mistica-color-textSecondary);">Cline</div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85rem; background: rgba(0, 100, 210, 0.15); border-left: 3px solid var(--mistica-color-brand);">
+    <div style="padding: 0.6rem 1rem; font-weight: 600; font-family: monospace;">AGENTS.md</div>
+    <div style="padding: 0.6rem 1rem;">Codex / generic</div>
+  </div>
+</div>
+
+<p style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--mistica-color-textSecondary);">Different filename, <strong>same concept</strong>: persistent context the model reads at the start of every session.</p>
+
+---
 layout: two-col
 ---
 
@@ -450,11 +542,18 @@ layout: two-col
 
 Instead of dumping everything in `AGENTS.md`:
 
-**Skills** are modular, on-demand instruction sets.
+**Skills** are modular, <span style="color: var(--mistica-color-brand); font-weight: 600;">on-demand instruction sets</span>.
 
-- Loaded only when relevant
-- Scoped to a specific task
-- Don't pollute the context
+<ul style="list-style: disc; padding-left: 1.25rem; margin: 0.75rem 0; font-size: 0.9rem; line-height: 1.8;">
+  <li>Loaded <strong>only when relevant</strong></li>
+  <li>Scoped to a <strong>specific task</strong></li>
+  <li>Don't pollute the context window</li>
+  <li>Invoked via <strong>slash commands</strong> (<code>/skill-name</code>)</li>
+</ul>
+
+<div style="display: flex; flex-direction: column; justify-content: center; padding: 1rem;">
+  <img src="/screenshots/skills-input.png" style="border: 1px solid var(--mistica-color-borderHigh); border-radius: var(--mistica-border-radius-container); width: 100%;" />
+</div>
 
 ::right::
 
@@ -475,7 +574,6 @@ Instead of dumping everything in `AGENTS.md`:
     </div>
   </div>
 </div>
-
 ---
 layout: two-col
 ---
