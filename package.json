@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "slidev --open",
     "build": "slidev build",
-    "export": "slidev export"
+    "export": "slidev export",
+    "export:png": "slidev export --format png --output ./slides-export"
   },
   "dependencies": {
     "@slidev/cli": "0.50.0",
