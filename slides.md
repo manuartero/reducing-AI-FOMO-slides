@@ -91,6 +91,10 @@ layout: two-col
 - Realizing this gap spikes the FOMO.
 - Knowing the field reduces the FOMO.
 
+<div div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 2em;">
+GOAL: Get from Level 1 → Level 2
+</div>
+
 </div>
 
 ::right::
@@ -112,14 +116,6 @@ layout: two-col
     <p style="margin: 0.25rem 0 0; font-size: 0.75rem; color: var(--mistica-color-textSecondary);">We</p>
   </div>
 </div>
-
----
-layout: quote
----
-
-GOAL: Get you from **Level 1 → Level 2**
-
-### Concrete. Achievable. Useful.
 
 ---
 layout: brand
@@ -428,13 +424,19 @@ layout: two-col
 
 # What is `AGENTS.md`?
 
-A file you put at the root of your project.
+We're using an agent. We write down the instructions and give it context.
+
+How do you tell it about the project? **We write it down.**
+
+If we are re-writing a similar context every single time, the idea to "reuse" a basic context
+
+> Initially I read it as `CONSTITUTION.md`
+
+Idea:  A file you put at the root of your project. just **instructions** that always are considered.
 
 The model reads it **automatically** at the start of every session.
 
-**It's your standing instructions.** Think of it as:
-
-> "Here's the context you always need."
+> "Here are the rules you must follow ALWAYS"
 
 ::right::
 
@@ -445,10 +447,15 @@ The model reads it **automatically** at the start of every session.
     <div>Run tests with: npm test</div>
     <div>Follow conventional commits.</div>
     <div>Never push to main directly.</div>
+    <div>Error codes are mandatory in log calls, every <code>logger.error()</code> needs a <code>code</code></div>
   </div>
   <div style="display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.75rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
     <MisticaIcon name="warning" :size="20" color="var(--mistica-color-warning)" />
     <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary); line-height: 1.4;">Current debate: fills the context window fast. Is it worth it if the model could discover most of that info anyway?</p>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.75rem; border-radius: var(--mistica-border-radius-container); background: var(--mistica-color-backgroundAlternative);">
+    <MisticaIcon name="warning" :size="20" color="var(--mistica-color-warning)" />
+    <p style="margin: 0; font-size: 0.8rem; color: var(--mistica-color-textSecondary); line-height: 1.4;">Avoid redundant info that the agent will assume anyway</p>
   </div>
 </div>
 
